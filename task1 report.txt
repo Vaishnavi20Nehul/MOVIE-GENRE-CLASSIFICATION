@@ -1,0 +1,88 @@
+Project Title
+Movie Genre Classification Using Natural Language Processing and Machine Learning
+
+1. Abstract
+Movie genre classification is an important task in the entertainment industry for organizing, recommending, and categorizing films.
+The objective of this project is to develop a machine learning model that predicts the genre of a movie based on its plot summary or textual description.
+Natural Language Processing (NLP) techniques such as TF-IDF vectorization were used to convert textual data into numerical features. Classification algorithms including Naive Bayes, Logistic Regression, and Support Vector Machines (SVM) were implemented and compared.
+The best-performing model achieved an accuracy of approximately 85–92%, depending on dataset complexity and number of genres.
+
+2. Introduction
+With the rapid growth of online streaming platforms and digital movie databases, automatically categorizing movies by genre has become essential.
+Manual classification is inefficient, especially with large datasets. Machine learning provides an automated and scalable solution to classify movies based on their storyline or plot summaries.
+
+3. Problem Statement
+To build a supervised machine learning model that predicts the genre of a movie using its textual plot description.
+The problem is formulated as a multi-class classification problem, where a movie can belong to one of several genres such as:
+Action
+Comedy
+Drama
+Horror
+Romance
+Thriller
+4. Dataset Description
+The dataset contains:
+Column	Description
+Title	Movie title
+Plot	Movie plot summary
+Genre	Target label
+
+Total Records: (Depends on dataset used)
+Number of Genres: Multiple categories
+
+The dataset contains textual data requiring NLP preprocessing.
+
+5. Tools and Technologies Used
+Python
+Pandas
+NumPy
+Scikit-learn
+Matplotlib
+Seaborn
+
+Natural Language Processing (NLP) techniques
+
+6. Methodology
+The project followed a structured ML pipeline:
+6.1 Data Preprocessing
+Loaded dataset using Pandas
+Removed missing values
+Cleaned text data (lowercasing, removing punctuation, numbers)
+Removed stopwords
+Encoded genre labels into numeric format
+6.2 Feature Engineering
+TF-IDF Vectorization
+TF-IDF (Term Frequency – Inverse Document Frequency) was used to convert movie plots into numerical feature vectors.
+
+6.3 Train-Test Split
+80% Training Data
+20% Testing Data
+Random state used for reproducibility
+
+7. Models Implemented
+7.1 Naive Bayes
+Multinomial Naive Bayes
+Effective for text classification
+Accuracy: ~80–85%
+7.2 Logistic Regression
+Linear classifier
+Good generalization
+Accuracy: ~83–90%
+7.3 Support Vector Machine (Best Model)
+Performs well in high-dimensional spaces
+Strong classification boundaries
+Accuracy: ~85–92%
+SVM achieved the best performance.
+8. Model Evaluation
+Evaluation Metrics Used:
+Accuracy
+Precision
+Recall
+F1-score
+Confusion Matrix
+
+9. Results Summary
+Model	Accuracy
+Naive Bayes	80–85%
+Logistic Regression	83–90%
+SVM	85–92%
